@@ -122,6 +122,15 @@ ul {
   margin-bottom:-50px;
 }
 
+#contin-links{
+  text-decoration: none;
+  color: black;
+}
+
+#contin-links:active{
+  color: black;
+}
+
 .container {
   position: relative;
   width: 50%;
