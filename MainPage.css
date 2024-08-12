@@ -4,221 +4,73 @@ body{
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#mainNav a{
+text-decoration: none;
+color: black;
+font-size: 50px;
+}
+
+#mainNav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+img{
+  width:200px;
+  margin-top: -20px;
+ }
+
+ .hero {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  background-color: rgba(255, 217, 122, 0.818);
+  border-radius: 30px;
+}
+
+.hero img {
+  width:300px;
+  max-width: 50%; /* Adjust the width as needed */
+  margin-right: 75px; /* Space between image and text */
+  margin-left: 10px;
+}
+
+.hero-text{
+  flex: 1; /* Take up the remaining space */
+}
+
+
+.About {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  margin-top: 100px;
+  background-color: rgba(255, 207, 118, 0.671);
+  border-radius: 30px;
+}
+
+.About img {
+  width:400px;
+  height:250px;
+  max-width: 50%; /* Adjust the width as needed */
+  margin-right: 10px; /* Space between image and text */
+  margin-left: 75px;
+}
+
+.about-text{
+  flex: 1; /* Take up the remaining space */
 
 }
 
-ul {
-  width:100%;
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
-   }
-
-   #logo{
-    width:150px;
-    height:100px;
-    float:left;
-   }
-   
-   li {
-     float: right;
-     font-size: 50px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-   }
-   
-   li a {
-     display: block;
-     color: black;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-   }
-   
-   li a:hover {
-     background-color:red;
-   }
-
-   .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .row {
-    display: flex;
-    padding-bottom: 4em;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-  }
-
-  #lion-img,#tiger-img,#jaguar-img{
-    height:300px;
-    width:100%;
-   
-  }
-
-  #lion{
-    position: relative;
-    text-align: center;
-  }
-
-  #tiger{
-    position: relative;
-    text-align: center;
-  }
-
-  #jaguar{
-    position: relative;
-    text-align: center;
-  }
-
-#lion-title{
-  position: absolute;
-  top: 68px;
-  right: 16px;
-  color:antiquewhite;
-}
-
-#tiger-title{
-  position: absolute;
-  top: 68px;
-  right: 75px;
-  color:antiquewhite;
-}
-
-#jaguar-title{
-  position: absolute;
-  top: 68px;
-  right: 25px;
-  color:antiquewhite;
-}
-
-#cat_info_title{
-  text-align: center;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 105px;
- margin-top: 1200px;
- margin-bottom: -800px;
-}
-
-.continents img{
-  width: 800px;
-  height:800px;
-}
-
-#contin-links{
+#footer a{
   text-decoration: none;
   color: black;
-}
-
-#contin-links:active{
-  color: black;
-}
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color:goldenrod;
-  color: black;
   font-size: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 16px 32px;
-}
-
-.donation{
-  position: relative;
-  margin-bottom:10em;
-}
-
-#donate-img{
-  width:100%;
-  height:1200px;
-  position: absolute;
-  opacity: 0.6;
-}
-
-#donate-title{
-  position:absolute;
-  left:40%;
- top:15px;
- font-size: 150px;
-}
-
-#donate-speech{
-  position: absolute;
-  text-align: center;
-  top:2.5em;
-  font-size: 100px;
-}
-
-#donate-btn{
-  position: relative;
-  font-size: 100px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  left:42%;
-  top:1000px;
-  border-radius: 10px;
-}
-
-section.cats_by_the_continents{
-  position: relative;
-  margin-top:1000px;
   }
-
-.footer{
-width: 100%;
-padding:25px;
-font-size: 50px;
-left: 50%;
-font-family: 'Times New Roman', Times, serif;
-
-}
-
-.footer > p{
-  margin:50px;
-  display:inline;
-font-size: 50px;
-font-family: 'Times New Roman', Times, serif;
-}
-
+  
+  #footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
