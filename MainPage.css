@@ -9,7 +9,7 @@ body{
 #mainNav a{
 text-decoration: none;
 color: black;
-font-size: 50px;
+font-size: 30px;
 }
 
 #mainNav{
@@ -18,51 +18,45 @@ font-size: 50px;
   padding: 10px;
 }
 
-img{
+#logo{
   width:200px;
-  margin-top: -20px;
+  height: 100px;
+  margin-top: -10px;
  }
 
- .hero {
-  display: flex;
-  align-items: center; /* Align items vertically centered */
-  background-color: rgba(255, 217, 122, 0.818);
-  border-radius: 30px;
+ hr{
+  border-top: 2px solid black;
+  margin-top: -15px;
+ }
+/*end of Nav-bar*/
+section.hero{
+min-height: 80vh;
+background:url(Wild-cat-donate.jpg);
+background-size: cover;
+-webkit-mask-image: linear-gradient(black, transparent);
 }
 
-.hero img {
-  width:300px;
-  max-width: 50%; /* Adjust the width as needed */
-  margin-right: 75px; /* Space between image and text */
-  margin-left: 10px;
+div.content{
+  max-width: 14rem;
 }
 
-.hero-text{
-  flex: 1; /* Take up the remaining space */
+#hero-slogan{
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
 }
 
-
-.About {
-  display: flex;
-  align-items: center; /* Align items vertically centered */
-  margin-top: 100px;
-  background-color: rgba(255, 207, 118, 0.671);
-  border-radius: 30px;
+#peppy-msg{
+color:azure;
 }
 
-.About img {
-  width:400px;
-  height:250px;
-  max-width: 50%; /* Adjust the width as needed */
-  margin-right: 10px; /* Space between image and text */
-  margin-left: 75px;
+#contin-btn{
+  font-size: 40px;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 3px;
 }
-
-.about-text{
-  flex: 1; /* Take up the remaining space */
-
-}
-
+/*
 #footer a{
   text-decoration: none;
   color: black;
@@ -70,7 +64,9 @@ img{
   }
   
   #footer{
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     padding: 5px;
   }
+*/
