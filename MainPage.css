@@ -86,7 +86,8 @@ mask-image: linear-gradient(to right, black 93%, transparent);
 }
 
 #about-img{
-  width:500px;
+  width:700px;
+  height:300px;
   mask-image: linear-gradient(to left, black 80%, transparent);
 }
 /*
