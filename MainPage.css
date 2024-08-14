@@ -9,13 +9,17 @@ body{
 #mainNav a{
 text-decoration: none;
 color: black;
-font-size: 30px;
+font-size: 50px;
 }
 
 #mainNav{
   display: flex;
   justify-content: space-between;
   padding: 10px;
+}
+
+#mainNav a:hover{
+  text-decoration: underline;
 }
 
 #logo{
@@ -30,24 +34,27 @@ font-size: 30px;
  }
 /*end of Nav-bar*/
 section.hero{
-min-height: 80vh;
-background:url(Wild-cat-donate.jpg);
-background-size: cover;
--webkit-mask-image: linear-gradient(black, transparent);
+min-height: 100vh;
+display: flex;
+background:url(wild-cat-poster.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+mask-image:linear-gradient(black 90%, transparent);
 }
 
 div.content{
-  max-width: 14rem;
+  max-width: 17rem;
 }
 
 #hero-slogan{
-  font-size: 60px;
+  font-size: 80px;
   text-transform: uppercase;
   color: white;
 }
 
 #peppy-msg{
-color:azure;
+color:white;
+font-size: 40px;
 }
 
 #contin-btn{
@@ -55,6 +62,32 @@ color:azure;
   background-color: antiquewhite;
   border: none;
   border-radius: 3px;
+  margin-left:20px;
+}
+
+/*About us*/
+.about{
+  display: flex;
+  min-height:30vh;
+  margin-top: 3em;
+  background-color: gray;
+}
+
+#about-text{
+mask-image: linear-gradient(to right, black 93%, transparent);
+}
+
+#about-text h4{
+  font-size: 40px;
+}
+
+#about-text p{
+  font-size: 30px;
+}
+
+#about-img{
+  width:500px;
+  mask-image: linear-gradient(to left, black 80%, transparent);
 }
 /*
 #footer a{
