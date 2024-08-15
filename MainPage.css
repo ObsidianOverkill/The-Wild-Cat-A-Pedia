@@ -5,7 +5,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+/*Nav-Bar*/
 #mainNav a{
 text-decoration: none;
 color: black;
@@ -33,13 +33,13 @@ font-size: 50px;
   margin-top: -15px;
  }
 /*end of Nav-bar*/
+/*Hero Section*/
 section.hero{
 min-height: 100vh;
 display: flex;
 background:url(wild-cat-poster.jpg);
 background-size: 100% 100%;
 background-repeat: no-repeat;
-mask-image:linear-gradient(black 90%, transparent);
 }
 
 div.content{
@@ -64,36 +64,93 @@ font-size: 40px;
   border-radius: 3px;
   margin-left:20px;
 }
+/*Hero Section (end)*/
 
-/*About us*/
-.about{
-  display: flex;
-  min-height:30vh;
-  margin-top: 3em;
-  background-color: gray;
+/*Did You Know */
+#did-you-know{
+  min-height: 80vh;
 }
 
-#about-text{
-mask-image: linear-gradient(to right, black 93%, transparent);
+#dyk-title{
+  text-align: center;
+  font-size: 75px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#about-text h4{
-  font-size: 40px;
+
+
+/* Did You Know (end)*/
+
+/*Merch Demo*/
+#demo-title{
+font-size: 75px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
 }
 
-#about-text p{
-  font-size: 30px;
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
-#about-img{
-  width:700px;
-  height:300px;
-  mask-image: linear-gradient(to left, black 80%, transparent);
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
 }
-/*
-#footer a{
-  text-decoration: none;
-  color: black;
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/*Merch Demo end*/
+
+
+/*#footer a{ 
+text-decoration: none;
+color: black;
   font-size: 30px;
   }
   
